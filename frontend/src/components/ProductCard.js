@@ -141,16 +141,16 @@ const ProductCard = () => {
             <div className="colors">
               <ul className="colors-container">
                 <li className="payment-card visa" aria-label="Visa">
-                  <div className="card-icon real-icon visa"><img src="/assets/visa.png" alt="Visa" style={{height: '16px', width: 'auto'}}/></div>
+                  <div className="card-icon real-icon visa"><img src="/assets/visa.png" alt="Visa" style={{height: '20px', width: 'auto'}}/></div>
                 </li>
                 <li className="payment-card google" aria-label="Google Play">
-                  <div className="card-icon real-icon google"><img src="/assets/googleplay-new.png" alt="Google Play" style={{height: '16px', width: 'auto'}}/></div>
+                  <div className="card-icon real-icon google"><img src="/assets/googleplay-new.png" alt="Google Play" style={{height: '20px', width: 'auto'}}/></div>
                 </li>
                 <li className="payment-card mastercard" aria-label="Mastercard">
-                  <div className="card-icon real-icon mastercard"><img src="/assets/mastercard.png" alt="Mastercard" style={{height: '16px', width: 'auto'}}/></div>
+                  <div className="card-icon real-icon mastercard"><img src="/assets/mastercard.png" alt="Mastercard" style={{height: '20px', width: 'auto'}}/></div>
                 </li>
                 <li className="payment-card itunes" aria-label="iTunes">
-                  <div className="card-icon real-icon itunes"><img src="/assets/itunes.png" alt="iTunes" style={{height: '16px', width: 'auto'}}/></div>
+                  <div className="card-icon real-icon itunes"><img src="/assets/itunes.png" alt="iTunes" style={{height: '20px', width: 'auto'}}/></div>
                 </li>
               </ul>
             </div>
