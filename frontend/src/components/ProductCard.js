@@ -358,28 +358,7 @@ const StyledWrapper = styled.div`
     object-fit: contain !important;
   }
 
-  .mini-overlay .payment-card.visa .card-icon.real-icon { padding: 0 !important; margin: 0 !important; background: transparent !important; box-shadow: none !important; border-radius: 0 !important; overflow: visible !important; height: auto !important; width: auto !important; line-height: 0 !important; display: inline-flex; align-items: center; }
-  .mini-overlay .payment-card.visa .card-icon.real-icon img { transform: none !important; width: auto; height: 24px; display: block; margin: 0; }
 
-  /* Ensure Visa container does not add extra edges */
-  /* Tight fit: remove any residual vertical gaps and let image define size */
-  .card .content .color-size-container .colors .colors-container .payment-card.visa .real-icon { height: auto; width: auto; line-height: 0; }
-
-  .card .content .color-size-container .colors .colors-container .payment-card.visa { height: auto; }
-
-  .card .content .color-size-container .colors .colors-container .payment-card.visa .real-icon { border-radius: 0; background: transparent; box-shadow: none; }
-  .card .content .color-size-container .colors .colors-container .payment-card.visa .real-icon img { margin: 0; }
-
-  /* Mini overlay: same strict fit */
-  .mini-overlay .payment-card.visa { height: auto; }
-  .mini-overlay .payment-card.visa .card-icon.real-icon { border-radius: 0; background: transparent; box-shadow: none; }
-
-  .card .content .color-size-container .colors .colors-container .payment-card.visa .real-icon { padding: 0; overflow: visible; }
-  .card .content .color-size-container .colors .colors-container .payment-card.visa .real-icon img { transform: none; height: 16px; width: auto; display: block; }
-
-  /* Mini overlay Visa-specific */
-  .mini-overlay .payment-card.visa .card-icon.real-icon { padding: 0; overflow: visible; }
-  .mini-overlay .payment-card.visa .card-icon.real-icon img { transform: none; width: auto; height: 22px; display: block; }
 
 
   /* Blue divider under rating spanning full card width */
