@@ -364,16 +364,19 @@ const StyledWrapper = styled.div`
     background: #ffffff !important; 
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1) !important; 
     border-radius: 8px !important; 
-    overflow: visible !important; 
+    overflow: hidden !important; 
     height: 28px !important; 
     width: auto !important; 
     line-height: 0 !important; 
+    font-size: 0 !important; 
     display: inline-flex !important; 
     align-items: center !important; 
     justify-content: center !important;
     transition: all 0.2s ease-in-out !important;
     cursor: pointer !important;
     border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    box-sizing: border-box !important;
+    vertical-align: top !important;
   }
   
   /* Mini overlay hover effects */
@@ -404,8 +407,14 @@ const StyledWrapper = styled.div`
     width: auto !important; 
     display: block !important; 
     margin: 0 !important;
+    padding: 0 !important;
     object-fit: contain !important;
     transition: all 0.2s ease-in-out !important;
+    vertical-align: top !important;
+    line-height: 0 !important;
+    font-size: 0 !important;
+    border: none !important;
+    outline: none !important;
   }
 
 
