@@ -294,11 +294,11 @@ const StyledWrapper = styled.div`
   .card .content .color-size-container .colors .colors-container .payment-card.mastercard .real-icon,
   .card .content .color-size-container .colors .colors-container .payment-card.itunes .real-icon,
   .card .content .color-size-container .colors .colors-container .payment-card.google .real-icon { 
-    padding: 0 !important; 
+    padding: 4px 6px !important; 
     margin: 0 !important; 
-    background: transparent !important; 
-    box-shadow: none !important; 
-    border-radius: 0 !important; 
+    background: #ffffff !important; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1) !important; 
+    border-radius: 6px !important; 
     overflow: visible !important; 
     height: 16px !important; 
     width: auto !important; 
@@ -306,6 +306,28 @@ const StyledWrapper = styled.div`
     display: inline-flex !important; 
     align-items: center !important; 
     justify-content: center !important;
+    transition: all 0.2s ease-in-out !important;
+    cursor: pointer !important;
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  }
+  
+  /* Hover effects */
+  .card .content .color-size-container .colors .colors-container .payment-card.visa .real-icon:hover,
+  .card .content .color-size-container .colors .colors-container .payment-card.mastercard .real-icon:hover,
+  .card .content .color-size-container .colors .colors-container .payment-card.itunes .real-icon:hover,
+  .card .content .color-size-container .colors .colors-container .payment-card.google .real-icon:hover {
+    transform: translateY(-2px) scale(1.05) !important;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.15) !important;
+    border: 1px solid rgba(0, 0, 0, 0.12) !important;
+  }
+  
+  /* Active/pressed effects */
+  .card .content .color-size-container .colors .colors-container .payment-card.visa .real-icon:active,
+  .card .content .color-size-container .colors .colors-container .payment-card.mastercard .real-icon:active,
+  .card .content .color-size-container .colors .colors-container .payment-card.itunes .real-icon:active,
+  .card .content .color-size-container .colors .colors-container .payment-card.google .real-icon:active {
+    transform: translateY(1px) scale(0.95) !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.15) !important;
   }
   
   .card .content .color-size-container .colors .colors-container .payment-card.visa .real-icon img,
@@ -318,6 +340,7 @@ const StyledWrapper = styled.div`
     display: block !important; 
     margin: 0 !important;
     object-fit: contain !important;
+    transition: all 0.2s ease-in-out !important;
   }
 
   /* Mini overlay - exact 22px height for all buttons */
@@ -332,11 +355,11 @@ const StyledWrapper = styled.div`
   .mini-overlay .payment-card.mastercard .card-icon.real-icon,
   .mini-overlay .payment-card.itunes .card-icon.real-icon,
   .mini-overlay .payment-card.google .card-icon.real-icon { 
-    padding: 0 !important; 
+    padding: 6px 8px !important; 
     margin: 0 !important; 
-    background: transparent !important; 
-    box-shadow: none !important; 
-    border-radius: 0 !important; 
+    background: #ffffff !important; 
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1) !important; 
+    border-radius: 8px !important; 
     overflow: visible !important; 
     height: 22px !important; 
     width: auto !important; 
@@ -344,6 +367,28 @@ const StyledWrapper = styled.div`
     display: inline-flex !important; 
     align-items: center !important; 
     justify-content: center !important;
+    transition: all 0.2s ease-in-out !important;
+    cursor: pointer !important;
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  }
+  
+  /* Mini overlay hover effects */
+  .mini-overlay .payment-card.visa .card-icon.real-icon:hover,
+  .mini-overlay .payment-card.mastercard .card-icon.real-icon:hover,
+  .mini-overlay .payment-card.itunes .card-icon.real-icon:hover,
+  .mini-overlay .payment-card.google .card-icon.real-icon:hover {
+    transform: translateY(-3px) scale(1.08) !important;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.15) !important;
+    border: 1px solid rgba(0, 0, 0, 0.12) !important;
+  }
+  
+  /* Mini overlay active effects */
+  .mini-overlay .payment-card.visa .card-icon.real-icon:active,
+  .mini-overlay .payment-card.mastercard .card-icon.real-icon:active,
+  .mini-overlay .payment-card.itunes .card-icon.real-icon:active,
+  .mini-overlay .payment-card.google .card-icon.real-icon:active {
+    transform: translateY(1px) scale(0.95) !important;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.15) !important;
   }
   
   .mini-overlay .payment-card.visa .card-icon.real-icon img,
@@ -356,6 +401,7 @@ const StyledWrapper = styled.div`
     display: block !important; 
     margin: 0 !important;
     object-fit: contain !important;
+    transition: all 0.2s ease-in-out !important;
   }
 
 
