@@ -297,13 +297,15 @@ const StyledWrapper = styled.div`
   .card .content .color-size-container .colors .colors-container .payment-card.google .real-icon img { transform: none !important; height: 18px; width: auto; display: block; }
   .mini-overlay .payment-card.google .card-icon.real-icon img { transform: none !important; height: 24px; width: auto; display: block; }
 
-  /* Google Play exact-fit like Visa/Master */
-  
-  
+  /* iTunes: exact-fit like Visa/Master */
+  .card .content .color-size-container .colors .colors-container .payment-card.itunes { height: auto !important; }
+  .card .content .color-size-container .colors .colors-container .payment-card.itunes .real-icon { padding: 0 !important; margin: 0 !important; background: transparent !important; box-shadow: none !important; border-radius: 0 !important; overflow: visible !important; height: auto !important; width: auto !important; line-height: 0 !important; display: inline-flex; align-items: center; }
+  .card .content .color-size-container .colors .colors-container .payment-card.itunes .real-icon img { transform: none !important; height: 18px !important; width: auto; display: block; margin: 0; }
 
-  
-  
-  /* Google Play: trim inner black edges via clip-path without changing aspect ratio */
+  /* Mini overlay iTunes: exact-fit */
+  .mini-overlay .payment-card.itunes { height: auto !important; }
+  .mini-overlay .payment-card.itunes .card-icon.real-icon { padding: 0 !important; margin: 0 !important; background: transparent !important; box-shadow: none !important; border-radius: 0 !important; overflow: visible !important; height: auto !important; width: auto !important; line-height: 0 !important; display: inline-flex; align-items: center; }
+  .mini-overlay .payment-card.itunes .card-icon.real-icon img { transform: none !important; height: 24px; width: auto; display: block; margin: 0; }
   .card .content .color-size-container .colors .colors-container .payment-card.google .real-icon img { clip-path: inset(1px 2px 1px 2px round 3px); }
   .mini-overlay .payment-card.google .card-icon.real-icon img { clip-path: inset(1.5px 2.5px 1.5px 2.5px round 4px); }
 
