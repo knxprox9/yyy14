@@ -143,8 +143,8 @@ const ProductCard = () => {
                 <li className="payment-card visa" aria-label="Visa">
                   <div className="card-icon real-icon visa"><img src="/assets/visa.png" alt="Visa" style={{height: '16px', width: 'auto'}}/></div>
                 </li>
-                <li className="payment-card google" aria-label="Google Pay">
-                  <div className="card-icon real-icon google"><img src="/assets/googleplay.png" alt="Google Play" style={{height: '16px', width: 'auto'}}/></div>
+                <li className="payment-card google" aria-label="Google Play">
+                  <div className="card-icon real-icon google"><img src="/assets/googleplay-new.png" alt="Google Play" style={{height: '16px', width: 'auto'}}/></div>
                 </li>
                 <li className="payment-card mastercard" aria-label="Mastercard">
                   <div className="card-icon real-icon mastercard"><img src="/assets/mastercard.png" alt="Mastercard" style={{height: '16px', width: 'auto'}}/></div>
