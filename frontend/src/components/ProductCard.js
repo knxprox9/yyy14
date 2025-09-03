@@ -274,12 +274,12 @@ const StyledWrapper = styled.div`
   /* Remove all old conflicting CSS rules */
 
   /* UNIFIED BUTTON STYLES - ALL FOUR BUTTONS (Visa, Mastercard, iTunes, Google Play) */
-  /* Main card - exact 20px height for all buttons */
+  /* Main card - exact 24px height for all buttons */
   .card .content .color-size-container .colors .colors-container .payment-card.visa,
   .card .content .color-size-container .colors .colors-container .payment-card.mastercard,
   .card .content .color-size-container .colors .colors-container .payment-card.itunes,
   .card .content .color-size-container .colors .colors-container .payment-card.google { 
-    height: 20px !important; 
+    height: 24px !important; 
     width: auto !important;
     position: relative !important;
     cursor: pointer !important;
@@ -289,24 +289,35 @@ const StyledWrapper = styled.div`
   .card .content .color-size-container .colors .colors-container .payment-card.mastercard .real-icon,
   .card .content .color-size-container .colors .colors-container .payment-card.itunes .real-icon,
   .card .content .color-size-container .colors .colors-container .payment-card.google .real-icon { 
-    padding: 0px !important; 
+    padding: 0 !important; 
     margin: 0 !important; 
     background: #ffffff !important; 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1) !important; 
     border-radius: 6px !important; 
     overflow: hidden !important; 
-    height: 20px !important; 
-    width: auto !important; 
-    line-height: 0 !important; 
-    font-size: 0 !important; 
-    display: inline-flex !important; 
-    align-items: center !important; 
-    justify-content: center !important;
+    height: 24px !important; 
+    width: 36px !important; 
+    display: inline-block !important; 
     transition: all 0.2s ease-in-out !important;
     cursor: pointer !important;
     border: 1px solid rgba(0, 0, 0, 0.08) !important;
-    box-sizing: border-box !important;
-    vertical-align: top !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+  }
+
+  /* Background images for each payment method */
+  .card .content .color-size-container .colors .colors-container .payment-card.visa .real-icon {
+    background-image: url('/assets/visa.png') !important;
+  }
+  .card .content .color-size-container .colors .colors-container .payment-card.mastercard .real-icon {
+    background-image: url('/assets/mastercard.png') !important;
+  }
+  .card .content .color-size-container .colors .colors-container .payment-card.itunes .real-icon {
+    background-image: url('/assets/itunes.png') !important;
+  }
+  .card .content .color-size-container .colors .colors-container .payment-card.google .real-icon {
+    background-image: url('/assets/googleplay-new.png') !important;
   }
   
   /* Hover effects */
@@ -326,25 +337,6 @@ const StyledWrapper = styled.div`
   .card .content .color-size-container .colors .colors-container .payment-card.google .real-icon:active {
     transform: translateY(1px) scale(0.95) !important;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.15) !important;
-  }
-  
-  .card .content .color-size-container .colors .colors-container .payment-card.visa .real-icon img,
-  .card .content .color-size-container .colors .colors-container .payment-card.mastercard .real-icon img,
-  .card .content .color-size-container .colors .colors-container .payment-card.itunes .real-icon img,
-  .card .content .color-size-container .colors .colors-container .payment-card.google .real-icon img { 
-    transform: none !important; 
-    height: 20px !important; 
-    width: auto !important; 
-    display: block !important; 
-    margin: 0 !important;
-    padding: 0 !important;
-    object-fit: contain !important;
-    transition: all 0.2s ease-in-out !important;
-    vertical-align: top !important;
-    line-height: 0 !important;
-    font-size: 0 !important;
-    border: none !important;
-    outline: none !important;
   }
 
   /* Mini overlay - exact 28px height for all buttons */
