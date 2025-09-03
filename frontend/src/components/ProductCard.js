@@ -294,7 +294,7 @@ const StyledWrapper = styled.div`
   .card .content .color-size-container .colors .colors-container .payment-card.mastercard .real-icon,
   .card .content .color-size-container .colors .colors-container .payment-card.itunes .real-icon,
   .card .content .color-size-container .colors .colors-container .payment-card.google .real-icon { 
-    padding: 2px !important; 
+    padding: 0px !important; 
     margin: 0 !important; 
     background: #ffffff !important; 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1) !important; 
