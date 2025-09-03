@@ -355,7 +355,7 @@ const StyledWrapper = styled.div`
   .mini-overlay .payment-card.mastercard .card-icon.real-icon,
   .mini-overlay .payment-card.itunes .card-icon.real-icon,
   .mini-overlay .payment-card.google .card-icon.real-icon { 
-    padding: 3px !important; 
+    padding: 0px !important; 
     margin: 0 !important; 
     background: #ffffff !important; 
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1) !important; 
