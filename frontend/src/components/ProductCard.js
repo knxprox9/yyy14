@@ -271,14 +271,7 @@ const StyledWrapper = styled.div`
   .card .promo-row .promo-item { display: inline-flex; align-items: center; gap: 0.25rem; background: #ffffff; border: 1px solid #eef2ff; border-radius: 999px; padding: 2px 6px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
   .card .promo-row .promo-item svg { width: 12px; height: 12px; color: #2563EB; }
 
-  .card .content .color-size-container .colors .colors-container .payment-card { height: 18px; position: relative; cursor: pointer; transition: transform 0.2s ease; }
-  .card .content .color-size-container .colors .colors-container .payment-card:hover { transform: scale(1.1); }
-  
-  .card .content .color-size-container .colors .colors-container .payment-card .real-icon { display: flex; align-items: center; justify-content: center; background: white; padding: 2px 6px; border-radius: 4px; }
-  .card .content .color-size-container .colors .colors-container .payment-card.roblox .real-icon svg { width: 28px; height: 16px; }
-  .card .content .color-size-container .colors .colors-container .payment-card .real-icon { overflow: hidden; }
-  .card .content .color-size-container .colors .colors-container .payment-card .real-icon svg,
-  .card .content .color-size-container .colors .colors-container .payment-card .real-icon img { transform: scale(1.35); transform-origin: center; }
+  /* Remove all old conflicting CSS rules */
 
   /* UNIFIED BUTTON STYLES - ALL FOUR BUTTONS (Visa, Mastercard, iTunes, Google Play) */
   /* Main card - exact 20px height for all buttons */
