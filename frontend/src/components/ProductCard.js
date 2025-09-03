@@ -280,43 +280,83 @@ const StyledWrapper = styled.div`
   .card .content .color-size-container .colors .colors-container .payment-card .real-icon svg,
   .card .content .color-size-container .colors .colors-container .payment-card .real-icon img { transform: scale(1.35); transform-origin: center; }
 
-  /* Visa-specific: remove extra padding and prevent clipping; keep natural aspect */
-  /* Visa: exact-fit without extra edges (override all generic paddings/shadows) */
-  .card .content .color-size-container .colors .colors-container .payment-card.visa { height: auto !important; }
-  .card .content .color-size-container .colors .colors-container .payment-card.visa .real-icon { padding: 0 !important; margin: 0 !important; background: transparent !important; box-shadow: none !important; border-radius: 0 !important; overflow: visible !important; height: auto !important; width: auto !important; line-height: 0 !important; display: inline-flex; align-items: center; }
-  .card .content .color-size-container .colors .colors-container .payment-card.visa .real-icon img { transform: none !important; height: 18px !important; width: auto; display: block; margin: 0; }
-
-  /* Mini overlay Visa: exact-fit */
-  .mini-overlay .payment-card.visa { height: auto !important; }
-
-  /* Match Google Pay and Mastercard to Visa exact-fit (main card) */
-  .card .content .color-size-container .colors .colors-container .payment-card.google .real-icon,
-  .card .content .color-size-container .colors .colors-container .payment-card.mastercard .real-icon { padding: 0 !important; margin: 0 !important; background: transparent !important; box-shadow: none !important; border-radius: 0 !important; overflow: visible !important; height: auto !important; width: auto !important; line-height: 0 !important; display: inline-flex; align-items: center; }
+  /* UNIFIED BUTTON STYLES - ALL FOUR BUTTONS (Visa, Mastercard, iTunes, Google Play) */
+  /* Main card - exact 16px height for all buttons */
+  .card .content .color-size-container .colors .colors-container .payment-card.visa,
+  .card .content .color-size-container .colors .colors-container .payment-card.mastercard,
+  .card .content .color-size-container .colors .colors-container .payment-card.itunes,
+  .card .content .color-size-container .colors .colors-container .payment-card.google { 
+    height: 16px !important; 
+    width: auto !important;
+  }
   
-  /* Unify Google to same visual size as Visa/Master (18px main, 24px mini) */
-  .card .content .color-size-container .colors .colors-container .payment-card.google .real-icon img { transform: none !important; height: 18px; width: auto; display: block; }
-  .mini-overlay .payment-card.google .card-icon.real-icon img { transform: none !important; height: 24px; width: auto; display: block; }
+  .card .content .color-size-container .colors .colors-container .payment-card.visa .real-icon,
+  .card .content .color-size-container .colors .colors-container .payment-card.mastercard .real-icon,
+  .card .content .color-size-container .colors .colors-container .payment-card.itunes .real-icon,
+  .card .content .color-size-container .colors .colors-container .payment-card.google .real-icon { 
+    padding: 0 !important; 
+    margin: 0 !important; 
+    background: transparent !important; 
+    box-shadow: none !important; 
+    border-radius: 0 !important; 
+    overflow: visible !important; 
+    height: 16px !important; 
+    width: auto !important; 
+    line-height: 0 !important; 
+    display: inline-flex !important; 
+    align-items: center !important; 
+    justify-content: center !important;
+  }
+  
+  .card .content .color-size-container .colors .colors-container .payment-card.visa .real-icon img,
+  .card .content .color-size-container .colors .colors-container .payment-card.mastercard .real-icon img,
+  .card .content .color-size-container .colors .colors-container .payment-card.itunes .real-icon img,
+  .card .content .color-size-container .colors .colors-container .payment-card.google .real-icon img { 
+    transform: none !important; 
+    height: 16px !important; 
+    width: auto !important; 
+    display: block !important; 
+    margin: 0 !important;
+    object-fit: contain !important;
+  }
 
-  /* iTunes: exact-fit like Visa/Master */
-  .card .content .color-size-container .colors .colors-container .payment-card.itunes { height: auto !important; }
-  .card .content .color-size-container .colors .colors-container .payment-card.itunes .real-icon { padding: 0 !important; margin: 0 !important; background: transparent !important; box-shadow: none !important; border-radius: 0 !important; overflow: visible !important; height: auto !important; width: auto !important; line-height: 0 !important; display: inline-flex; align-items: center; }
-  .card .content .color-size-container .colors .colors-container .payment-card.itunes .real-icon img { transform: none !important; height: 18px !important; width: auto; display: block; margin: 0; }
-
-  /* Mini overlay iTunes: exact-fit */
-  .mini-overlay .payment-card.itunes { height: auto !important; }
-  .mini-overlay .payment-card.itunes .card-icon.real-icon { padding: 0 !important; margin: 0 !important; background: transparent !important; box-shadow: none !important; border-radius: 0 !important; overflow: visible !important; height: auto !important; width: auto !important; line-height: 0 !important; display: inline-flex; align-items: center; }
-  .mini-overlay .payment-card.itunes .card-icon.real-icon img { transform: none !important; height: 24px; width: auto; display: block; margin: 0; }
-  .card .content .color-size-container .colors .colors-container .payment-card.google .real-icon img { clip-path: inset(1px 2px 1px 2px round 3px); }
-  .mini-overlay .payment-card.google .card-icon.real-icon img { clip-path: inset(1.5px 2.5px 1.5px 2.5px round 4px); }
-
-
-  .card .content .color-size-container .colors .colors-container .payment-card.mastercard .real-icon img { transform: none !important; height: 18px; width: auto; display: block; }
-
-  /* Mini overlay: match sizes to Visa */
-  .mini-overlay .payment-card.google .card-icon.real-icon,
-  .mini-overlay .payment-card.mastercard .card-icon.real-icon { padding: 0 !important; margin: 0 !important; background: transparent !important; box-shadow: none !important; border-radius: 0 !important; overflow: visible !important; height: auto !important; width: auto !important; line-height: 0 !important; display: inline-flex; align-items: center; }
-  .mini-overlay .payment-card.google .card-icon.real-icon svg { transform: none !important; height: 22px; width: auto; display: block; }
-  .mini-overlay .payment-card.mastercard .card-icon.real-icon img { transform: none !important; height: 24px; width: auto; display: block; }
+  /* Mini overlay - exact 22px height for all buttons */
+  .mini-overlay .payment-card.visa,
+  .mini-overlay .payment-card.mastercard,
+  .mini-overlay .payment-card.itunes,
+  .mini-overlay .payment-card.google { 
+    height: auto !important; 
+  }
+  
+  .mini-overlay .payment-card.visa .card-icon.real-icon,
+  .mini-overlay .payment-card.mastercard .card-icon.real-icon,
+  .mini-overlay .payment-card.itunes .card-icon.real-icon,
+  .mini-overlay .payment-card.google .card-icon.real-icon { 
+    padding: 0 !important; 
+    margin: 0 !important; 
+    background: transparent !important; 
+    box-shadow: none !important; 
+    border-radius: 0 !important; 
+    overflow: visible !important; 
+    height: 22px !important; 
+    width: auto !important; 
+    line-height: 0 !important; 
+    display: inline-flex !important; 
+    align-items: center !important; 
+    justify-content: center !important;
+  }
+  
+  .mini-overlay .payment-card.visa .card-icon.real-icon img,
+  .mini-overlay .payment-card.mastercard .card-icon.real-icon img,
+  .mini-overlay .payment-card.itunes .card-icon.real-icon img,
+  .mini-overlay .payment-card.google .card-icon.real-icon img { 
+    transform: none !important; 
+    height: 22px !important; 
+    width: auto !important; 
+    display: block !important; 
+    margin: 0 !important;
+    object-fit: contain !important;
+  }
 
   .mini-overlay .payment-card.visa .card-icon.real-icon { padding: 0 !important; margin: 0 !important; background: transparent !important; box-shadow: none !important; border-radius: 0 !important; overflow: visible !important; height: auto !important; width: auto !important; line-height: 0 !important; display: inline-flex; align-items: center; }
   .mini-overlay .payment-card.visa .card-icon.real-icon img { transform: none !important; width: auto; height: 24px; display: block; margin: 0; }
