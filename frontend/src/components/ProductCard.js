@@ -281,12 +281,12 @@ const StyledWrapper = styled.div`
   .card .content .color-size-container .colors .colors-container .payment-card .real-icon img { transform: scale(1.35); transform-origin: center; }
 
   /* UNIFIED BUTTON STYLES - ALL FOUR BUTTONS (Visa, Mastercard, iTunes, Google Play) */
-  /* Main card - exact 16px height for all buttons */
+  /* Main card - exact 20px height for all buttons */
   .card .content .color-size-container .colors .colors-container .payment-card.visa,
   .card .content .color-size-container .colors .colors-container .payment-card.mastercard,
   .card .content .color-size-container .colors .colors-container .payment-card.itunes,
   .card .content .color-size-container .colors .colors-container .payment-card.google { 
-    height: 16px !important; 
+    height: 20px !important; 
     width: auto !important;
   }
   
@@ -294,13 +294,13 @@ const StyledWrapper = styled.div`
   .card .content .color-size-container .colors .colors-container .payment-card.mastercard .real-icon,
   .card .content .color-size-container .colors .colors-container .payment-card.itunes .real-icon,
   .card .content .color-size-container .colors .colors-container .payment-card.google .real-icon { 
-    padding: 4px 6px !important; 
+    padding: 2px !important; 
     margin: 0 !important; 
     background: #ffffff !important; 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1) !important; 
     border-radius: 6px !important; 
     overflow: visible !important; 
-    height: 16px !important; 
+    height: 20px !important; 
     width: auto !important; 
     line-height: 0 !important; 
     display: inline-flex !important; 
@@ -335,7 +335,7 @@ const StyledWrapper = styled.div`
   .card .content .color-size-container .colors .colors-container .payment-card.itunes .real-icon img,
   .card .content .color-size-container .colors .colors-container .payment-card.google .real-icon img { 
     transform: none !important; 
-    height: 16px !important; 
+    height: 20px !important; 
     width: auto !important; 
     display: block !important; 
     margin: 0 !important;
@@ -343,7 +343,7 @@ const StyledWrapper = styled.div`
     transition: all 0.2s ease-in-out !important;
   }
 
-  /* Mini overlay - exact 22px height for all buttons */
+  /* Mini overlay - exact 28px height for all buttons */
   .mini-overlay .payment-card.visa,
   .mini-overlay .payment-card.mastercard,
   .mini-overlay .payment-card.itunes,
@@ -355,13 +355,13 @@ const StyledWrapper = styled.div`
   .mini-overlay .payment-card.mastercard .card-icon.real-icon,
   .mini-overlay .payment-card.itunes .card-icon.real-icon,
   .mini-overlay .payment-card.google .card-icon.real-icon { 
-    padding: 6px 8px !important; 
+    padding: 3px !important; 
     margin: 0 !important; 
     background: #ffffff !important; 
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1) !important; 
     border-radius: 8px !important; 
     overflow: visible !important; 
-    height: 22px !important; 
+    height: 28px !important; 
     width: auto !important; 
     line-height: 0 !important; 
     display: inline-flex !important; 
@@ -396,7 +396,7 @@ const StyledWrapper = styled.div`
   .mini-overlay .payment-card.itunes .card-icon.real-icon img,
   .mini-overlay .payment-card.google .card-icon.real-icon img { 
     transform: none !important; 
-    height: 22px !important; 
+    height: 28px !important; 
     width: auto !important; 
     display: block !important; 
     margin: 0 !important;
