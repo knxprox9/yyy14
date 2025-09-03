@@ -281,6 +281,8 @@ const StyledWrapper = styled.div`
   .card .content .color-size-container .colors .colors-container .payment-card.google { 
     height: 20px !important; 
     width: auto !important;
+    position: relative !important;
+    cursor: pointer !important;
   }
   
   .card .content .color-size-container .colors .colors-container .payment-card.visa .real-icon,
@@ -292,16 +294,19 @@ const StyledWrapper = styled.div`
     background: #ffffff !important; 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1) !important; 
     border-radius: 6px !important; 
-    overflow: visible !important; 
+    overflow: hidden !important; 
     height: 20px !important; 
     width: auto !important; 
     line-height: 0 !important; 
+    font-size: 0 !important; 
     display: inline-flex !important; 
     align-items: center !important; 
     justify-content: center !important;
     transition: all 0.2s ease-in-out !important;
     cursor: pointer !important;
     border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    box-sizing: border-box !important;
+    vertical-align: top !important;
   }
   
   /* Hover effects */
@@ -332,8 +337,14 @@ const StyledWrapper = styled.div`
     width: auto !important; 
     display: block !important; 
     margin: 0 !important;
+    padding: 0 !important;
     object-fit: contain !important;
     transition: all 0.2s ease-in-out !important;
+    vertical-align: top !important;
+    line-height: 0 !important;
+    font-size: 0 !important;
+    border: none !important;
+    outline: none !important;
   }
 
   /* Mini overlay - exact 28px height for all buttons */
